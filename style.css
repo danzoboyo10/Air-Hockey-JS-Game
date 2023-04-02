@@ -1,0 +1,69 @@
+body {
+  background-image: url("https://t3.ftcdn.net/jpg/03/06/59/52/360_F_306595210_sTtKiI1G7Ulo8q3OfAXpKvMrDXOEb8eJ.jpg");
+  height: 90%;
+  background-image: no-repeat;
+  background-size: cover;
+
+
+}
+#titleText {
+  font-family: "consolas", monospace;
+  text-align: center;
+  font-size: 80px;
+  padding-left: 230px;
+  color: whitesmoke;
+  -webkit-text-stroke: 2px black;
+
+  
+}
+
+#hockeyContainer {
+  width: 50%;
+  margin: auto;
+ 
+}
+
+#hockeyBoard {
+  border: 4px solid;
+  width: 1000px;
+  height: 500px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKAnC5ObCi-govXkBtk-OrbsSdNmHZ4eKqOyulp9sbfPCIPww8ud7IBfrcDxWVmTzgpM&usqp=CAU"); 
+  background-image: no-repeat;
+  background-size: cover;
+
+
+ 
+}
+#scoreBoard {
+  font-family: "consolas", monospace;
+  color: whitesmoke;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-left: 150px;
+  -webkit-text-stroke: 1.5px black;
+
+}
+#restartContainer {
+  width: 50%;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 400px;
+}
+#restartBtn {
+  
+  font-family:  "consolas", monospace;
+  font-weight: bold;
+  font-size: 25px;
+  border: 5px solid;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px;
+  color: whitesmoke;
+  background-color: black;
+  
+}
+#restartBtn:hover {
+  background-color: red;
+}
