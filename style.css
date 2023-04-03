@@ -18,16 +18,17 @@ body {
 }
 
 #hockeyContainer {
-  width: 50%;
-  margin: auto;
- 
+  /* width: 50%;
+  margin: auto; */
+  text-align: center;
 }
 
 #hockeyBoard {
   border: 4px solid;
-  width: 1000px;
-  height: 500px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKAnC5ObCi-govXkBtk-OrbsSdNmHZ4eKqOyulp9sbfPCIPww8ud7IBfrcDxWVmTzgpM&usqp=CAU"); 
+  width: 50%;
+  height: 50%;
+  background-color: whitesmoke;
+  background-image: url(""); 
   background-image: no-repeat;
   background-size: cover;
 
@@ -36,8 +37,8 @@ body {
 }
 #scoreBoard {
   font-family: "consolas", monospace;
-  color: whitesmoke;
   font-size: 50px;
+  color: whitesmoke;
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
@@ -52,7 +53,6 @@ body {
   padding-left: 400px;
 }
 #restartBtn {
-  
   font-family:  "consolas", monospace;
   font-weight: bold;
   font-size: 25px;
