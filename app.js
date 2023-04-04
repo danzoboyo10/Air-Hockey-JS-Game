@@ -51,6 +51,7 @@ restartBtn.addEventListener("click", restartGame);
 startGame();
 
 function startGame() {
+  updateScoreBoard()
   createPuck();
   nextTick();
 
@@ -225,7 +226,7 @@ function changeDirection(event) {
 
 };
 function updateScoreBoard() {
-  scoreBoard.textContent = `${player1}${player1Score}\n ${player2}${player2Score}`
+  scoreBoard.textContent = `${player1}${player1Score} \n ${player2}${player2Score}`
 }
 function restartGame() {
   player1Score = 0;
