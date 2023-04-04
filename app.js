@@ -3,32 +3,6 @@ const ctx = hockeyBoard.getContext("2d"); // Context what we draw on
 
 const boardBackground = "white"
 
-ctx.beginPath();
-ctx.moveTo(225, 0);
-ctx.lineTo(225, 200);
-ctx.strokeStyle = "#00008B";
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(150, 0);
-ctx.lineTo(150, 40);
-ctx.strokeStyle = "#00008B";
-ctx.stroke();
-
-ctx.font = "10px consolas, monospace";
-ctx.strokeStyle = "red";
-ctx.strokeText("By Danny Slebodnick", 90, 140);
-ctx.beginPath();
-ctx.moveTo(75, 0);
-ctx.lineTo(75, 200);
-ctx.strokeStyle = "#00008B";
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(150, 75, 35, 0, 2 * Math.PI);
-ctx.moveTo(0, 75);
-
-ctx.strokeStyle = "#00008B"
-ctx.stroke();
 
 
 const scoreBoard = document.querySelector("#scoreBoard");
@@ -83,6 +57,7 @@ function startGame() {
 }
 function nextTick() {
   intervalID = setTimeout(() => {
+    ctx.clearRect(0, 0,  tableWidth, tableHeight)
     clearTable();
     drawAPaddles();
     movePuck();
@@ -95,6 +70,38 @@ function nextTick() {
 function clearTable() {
   ctx.fillStyle = boardBackground;
   ctx.fillRect(0, 0, tableWidth, tableHeight);
+  ctx.beginPath();
+  ctx.moveTo(225, 0);
+  ctx.lineTo(225, 200);
+  ctx.strokeStyle = "#00008B";
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(150, 0);
+  ctx.lineTo(150, 40);
+  ctx.strokeStyle = "#00008B";
+  ctx.stroke();
+
+  ctx.font = "10px serif";
+  ctx.strokeStyle = "red";
+  // ctx.strokeText("By Danny Slebodnick", 90, 140);
+  ctx.beginPath();
+  ctx.moveTo(75, 0);
+  ctx.lineTo(75, 200);
+  ctx.strokeStyle = "#00008B";
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(150, 75, 35, 0, 2 * Math.PI);
+  ctx.moveTo(0, 75);
+
+  ctx.strokeStyle = "#00008B"
+  ctx.stroke();
+
+  ctx.beginPath()
+  ctx.moveTo(150, 110)
+  ctx.lineTo(150, 150)
+  ctx.strokeStyle = "#00008B"
+  ctx.stroke();
 
 }
 function drawAPaddles() {
