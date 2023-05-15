@@ -16,7 +16,7 @@ A Video game-like Air Hockey game coded with vanilla JavaScript! Two player game
 
 
 ## Getting Started 
-Click <a href ="[https://skate-react.netlify.app/](https://genuine-manatee-b6b896.netlify.app/)" target="_blank"/> here </a> to see the deployed app!
+Click <a href = "https://skate-react.netlify.app/](https://genuine-manatee-b6b896.netlify.app/)" target="_blank"/> here </a> to see the deployed app!
 
 ## Unsolved Problems
 * Have a set score that automotically restarts the game
